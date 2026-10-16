@@ -5,6 +5,7 @@ COPY package.json package-lock.json ./
 COPY packages ./packages
 COPY scripts ./scripts
 COPY types ./types
+COPY assets ./assets
 COPY babel.config.json brand.config.json tsconfig.json ./.prettierrc ./
 
 RUN npm ci --ignore-scripts
