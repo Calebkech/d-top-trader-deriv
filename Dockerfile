@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 COPY packages ./packages
 COPY scripts ./scripts
-COPY babel.config.json brand.config.json ./.prettierrc ./
+COPY babel.config.json brand.config.json tsconfig.json ./.prettierrc ./
 
 RUN npm ci --ignore-scripts
 RUN npm run build:all
