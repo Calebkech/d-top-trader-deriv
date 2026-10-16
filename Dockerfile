@@ -4,6 +4,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 COPY packages ./packages
 COPY scripts ./scripts
+COPY types ./types
 COPY babel.config.json brand.config.json tsconfig.json ./.prettierrc ./
 
 RUN npm ci --ignore-scripts
